@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Planet Generation Panel",
     "author": "Voznyuk Anton",
-    "version": (3, 2, 0),
+    "version": (0, 0, 2),
     "blender": (3, 2, 0),
     "location": "Properties > Scene Properties",
     "description": "Another Noise Tool: Textured Version",
@@ -117,6 +117,7 @@ class PlanetPanel(bpy.types.Panel):
 
         row = layout.row()
         row.label(text="Planet Settings", icon='MESH_UVSPHERE')
+        col = layout.column
 
         try:
             texture = bpy.data.textures[t_name]
